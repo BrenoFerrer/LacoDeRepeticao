@@ -16,9 +16,6 @@ public class Ex10 {
         double pc1, pc2, pc3;
 
 
-
-
-
         Scanner ent = new Scanner(System.in);
 
         //Laço de Repetição
@@ -55,6 +52,31 @@ public class Ex10 {
         System.out.println("Votos Inválidos = " +votosinvalidos);
 
         //Calcular o total de votos
+
+        total = candidato1 + candidato2 + candidato3;
+        pc1 = candidato1 / total * 100;
+        pc2 = candidato2 / total * 100;
+        pc3 = candidato3 / total * 100;
+
+        System.out.println();
+        System.out.println("Total de votos -> " +total);
+        System.out.println(" Porcentagem do Candidato 1 = " +pc1);
+        System.out.println(" Porcentagem do Candidato 2 = " +pc2);
+        System.out.println(" Porcentagem do Candidato 3 = "+pc3);
+
+
+        if (candidato1 > candidato2 && candidato1 > candidato3)
+            System.out.println("O Candidato 1 é o Vencedor! ");
+
+
+        else if (candidato2 > candidato3) {
+            System.out.println("O Candidato 2 é o Vencedor! ");
+        }
+
+
+        else {
+            System.out.println("O Candidato 3 é o Vencedor! ");
+        }
 
 
     }
